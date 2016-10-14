@@ -11,14 +11,12 @@ gem 'mysql2'
 gem 'puma', '~> 3.0'
 # gem "unicorn"
 gem 'bootstrap', '~> 4.0.0.alpha3'
-gem 'sqlite3'
+gem 'devise'
 
 # Use SCSS for stylesheets
 # gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
-gem 'chronic'
-gem "babosa"
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.1.0'
@@ -35,7 +33,6 @@ end
 # gem 'therubyracer', platforms: :ruby
 
 # Use jquery as the JavaScript library
-
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 # gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
@@ -57,6 +54,8 @@ end
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
+  gem 'annotate'
+  gem 'pry'
 end
 
 group :development do
