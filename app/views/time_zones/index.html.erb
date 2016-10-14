@@ -1,0 +1,21 @@
+<h1>Time now in all Time Zones</h1>
+
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+			<th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @time_zones.each do |zone, time| %>
+      <tr>
+        <td><%= zone %></td>
+        <td><%= time %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
